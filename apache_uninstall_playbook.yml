@@ -1,0 +1,9 @@
+--- 
+- name: This uninstalls apache webserver
+   sudo: yes
+   hosts: 172.31.36.123
+   tasks: 
+   - name: Uninstall apache packages
+     apt: name=apache2 update_cache=yes state=absent
+  
+
